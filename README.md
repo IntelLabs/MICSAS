@@ -1,5 +1,7 @@
 # MISIM: An End-to-End Neural Code Similarity System
 
+MISIM is a neural code semantics similarity system that introduces a novel code representation named context-aware semantics structure (CASS in short). Further details can be found in the [technical paper](https://arxiv.org/pdf/2006.05265.pdf).
+
 ## Requirements
 
 - Python 3.7.6
