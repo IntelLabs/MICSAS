@@ -1,6 +1,6 @@
-# MISIM: An End-to-End Neural Code Similarity System
+# MISIM: A Neural Code Semantics Similarity System Using the Context-Aware Semantics Structure
 
-MISIM is a neural code semantics similarity system that introduces a novel code representation named context-aware semantics structure (CASS in short). Further details can be found in the [technical paper](https://arxiv.org/pdf/2006.05265.pdf).
+MISIM is a neural code semantics similarity system that introduces a novel code representation named context-aware semantics structure (CASS in short) and a neural-backend that supports various neural network architectures. Further details can be found in the [technical paper](https://arxiv.org/pdf/2006.05265.pdf) titled "A Neural Code Semantics Similarity System Using the Context-Aware Semantics Structure" by Fangke Ye, Shengtian Zhou, Anand Venkat, Ryan Marcus, Nesime Tatbul, Jesmin Jahan Tithi, Niranjan Hasabnis, Paul Petersen, Timothy Mattson, Tim Kraska, Pradeep Dubey, Vivek Sarkar, Justin Gottschlich
 
 ## Requirements
 
