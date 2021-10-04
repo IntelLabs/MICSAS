@@ -19,7 +19,7 @@ Further details can be found in the [technical paper](https://arxiv.org/pdf/2006
     * tqdm 4.42.1
     * tree-sitter 0.1.1
     * wget 3.2
-    * networkx 2.4
+    * networkx 2.6
 - CMake
 - C++14 compatible compiler
 - Clang++ 3.7.1 (optional, for the preprocessing step of Neural Code Comprehension)
