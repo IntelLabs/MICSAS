@@ -41,10 +41,6 @@ CassExtractorBase::extractCassForFunctions(const std::string &src,
   TSTree *tree = ts_parser_parse_string(parser, nullptr, srcBytes.c_str(),
                                         srcBytes.length());
 
-  if (tree == NULL) {
-    return {};
-  }
-
   auto root_node = ts_tree_root_node(tree);
 
   if (!allowParseErrors) {
