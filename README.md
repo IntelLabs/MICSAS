@@ -19,7 +19,7 @@ Further details can be found in the [technical paper](https://arxiv.org/pdf/2006
     * tqdm 4.42.1
     * tree-sitter 0.1.1
     * wget 3.2
-    * networkx 2.6
+    * networkx 2.4
 - CMake
 - C++14 compatible compiler
 - Clang++ 3.7.1 (optional, for the preprocessing step of Neural Code Comprehension)
@@ -28,7 +28,10 @@ Further details can be found in the [technical paper](https://arxiv.org/pdf/2006
 
 1. Data preprocessing
     - Run `./preprocess.sh` (clang++-3.7.1 required), or
-    - Download preprocessed datasets from [here](https://www.dropbox.com/s/zilq32a4s9pygde/datasets.tar.xz) and extract them into `data/`.
+    - Download preprocessed datasets from [here](https://www.dropbox.com/s/1a9bgafrsbzpjoj/datasets.tar.xz?dl=1) and extract them into `data/`.
+
+    The CASS configuration is set to 2-1-3-1-1 by default.
+    To use another configuration, modify [cass/config.py](cass/config.py) before running the preprocessing scripts.
 
 2. Training
 
@@ -46,14 +49,17 @@ Further details can be found in the [technical paper](https://arxiv.org/pdf/2006
     - sbt (MISIM-RNN)
     - bof (MISIM-BoF)
     - c2v (code2vec)
+    - c2s (code2seq)
     - ncc (Neural Code Comprehension with inst2vec)
-    
+    - seqrnn (RNN on code token sequences)
+    - seqtf (Transformer on code token sequences)
+
     To train the Neural Code Comprehension model without inst2vec, use the following command:
     ```
     python train.py ncc -noi2v --split data/datasets/split_<dataset_name>.pkl -f data/datasets/<dataset_name>/dataset-ncc --save data/models/<dataset_name>/ncc-noi2v
     ```
 
-    Pre-trained models are available [here](https://www.dropbox.com/s/jlfp2oypzkc29q7/models.tar.xz). They include the models trained with three different random seeds, and were used to obtain the evaluation results in the paper.
+    Pre-trained models are available [here](https://www.dropbox.com/s/gv4sodb04rvzyti/models.tar.xz?dl=1). They include the models trained with three different random seeds, and were used to obtain the evaluation results in the paper.
 
 ## Evaluation
 
