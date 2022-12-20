@@ -76,3 +76,5 @@ python aroma.py -f data/datasets/<dataset_name>/dataset-aroma --split data/datas
 # Aroma-Cos
 python aroma.py -f data/datasets/<dataset_name>/dataset-aroma --split data/datasets/split_<dataset_name>.pkl --sim cos
 ```
+
+> Reviewed, 12/20/22 -michaelbeale-il
