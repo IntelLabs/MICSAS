@@ -1,3 +1,5 @@
+⚠️ DISCONTINUATION OF PROJECT - This project will no longer be maintained by Intel. Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project. Intel no longer accepts patches to this project. If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.
+
 # MICSAS: Machine Inferred Code Semantics Analysis System
 
 MICSAS (also known as MISIM) is a neural code semantics similarity system that introduces a novel code representation named context-aware semantics structure (CASS in short) and a neural-backend that supports various neural network architectures. 
